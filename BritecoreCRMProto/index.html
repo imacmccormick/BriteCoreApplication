@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BriteCore CRM Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!--Font Awesome Embed-->
+    <script src="https://use.fontawesome.com/4f4c292748.js"></script>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Hover script for Panels-->
+    <script>
+    $(document).ready(function(){
+      $(".card").hover(function(){
+          $(this).css("background-color", "green");
+          }, function(){
+            $(this).css("background-color", "white");
+          });
+      });
+      </script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="header">
+     <div class="container">
+        <div class="row">
+           <!--Logo-->
+           <div class="col-md-5">
+              <!-- Logo -->
+              <div class="logo">
+                 <h1><a href="index.html">ABC Insurance</a></h1>
+              </div>
+           </div>
+           <!--Search Bar-->
+           <div class="col-md-5">
+              <div class="input-group form">
+                   <input type="text" class="form-control" placeholder="Search...">
+                   <span class="input-group-btn">
+                     <button class="btn btn-primary" type="button">Search</button>
+                   </span>
+              </div>
+           </div>
+           <!--Login-->
+           <div class="col-md-2">
+              <div class="navbar navbar-inverse" role="banner">
+                  <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, Mac! <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu animated fadeInUp">
+                          <li><a href="profile.html">Profile</a></li>
+                          <li><a href="login.html">Logout</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+           </div>
+        </div>
+     </div>
+	</div>
+  <div class="page-content">
+    	<div class="row">
+        <!--Sidenav-->
+    	  <div class="col-md-2">
+    	  	<div class="sidebar content-box" style="display: block;">
+                  <ul class="nav">
+                      <!-- Left Nav Menu -->
+                      <li class="current"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                      <li><a href="calendar.html"><i class="fa fa-building" aria-hidden="true"></i> Agencies</a></li>
+                      <li><a href="stats.html"><i class="fa fa-users" aria-hidden="true"></i> Agents</a></li>
+                      <li><a href="tables.html"><i class="fa fa-home" aria-hidden="true"></i> Policies</a></li>
+                      <li><a href="buttons.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Locations</a></li>
+                      <li><a href="editors.html"><i class="fa fa-id-card" aria-hidden="true"></i> Licenses</a></li>
+                      <li><a href="forms.html"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+                  </ul>
+               </div>
+    	  </div>
+        <!--Body Content-->
+        <div class="col-md-10">
+          <!--Agency 1-->
+          <div  class="row">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h1>Gilbert Insurance Agency</h1>
+              </div>
+              <div class="panel-body">
+                <!--Action Card-->
+                <div class="col-md-3">
+                  <div class="card">
+                    <i class="fa fa-address-card-o fa-5x" aria-hidden="true"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Agents</h5>
+                      <p class="card-text">Manage the agents for this agency.</p>
+                      <a href="#" class="btn btn-primary">Let's Go</a>
+                    </div>
+                  </div>
+                </div>
+                <!--Action Card-->
+                <div class="col-md-3">
+                  <div class="card">
+                    <i class="fa fa-address-card-o fa-5x" aria-hidden="true"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Action to Take</h5>
+                      <p class="card-text">Add agents into an agency to manage them more effectively</p>
+                      <a href="#" class="btn btn-primary">Add Agents</a>
+                    </div>
+                  </div>
+                </div>
+                <!--Action Card-->
+                <div class="col-md-3">
+                  <div class="card">
+                    <i class="fa fa-address-card-o fa-5x" aria-hidden="true"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Action to Take</h5>
+                      <p class="card-text">Add agents into an agency to manage them more effectively</p>
+                      <a href="#" class="btn btn-primary">Add Agents</a>
+                    </div>
+                  </div>
+                </div>
+                <!--Action Card-->
+                <div class="col-md-3">
+                  <div class="card">
+                    <i class="fa fa-address-card-o fa-5x" aria-hidden="true"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Action to Take</h5>
+                      <p class="card-text">Add agents into an agency to manage them more effectively</p>
+                      <a href="#" class="btn btn-primary">Add Agents</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <footer>
+     <div class="container">
+        <div class="copy text-center">
+           Copyright ABC Insurance 2018
+        </div>
+     </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
