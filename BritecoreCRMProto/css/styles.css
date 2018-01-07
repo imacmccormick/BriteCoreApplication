@@ -32,6 +32,14 @@ body {
   border-radius: 3px;
   border-color: #ddd;
   padding: 20px;
+  text-align:center;
+}
+.dash-card{
+  color:#333;
+  text-decoration:none;
+}
+.dash-card:hover{
+  text-decoration:none;
 }
 .card:hover{
   -webkit-transform: scale(1.1);
@@ -39,6 +47,7 @@ body {
   transform: scale(1.1);
   transition: 0.3s ease;
   color: white;
+  background-color:green;
 }
 
 /* Footer */

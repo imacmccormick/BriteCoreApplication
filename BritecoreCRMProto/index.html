@@ -12,16 +12,6 @@
 
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Hover script for Panels-->
-    <script>
-    $(document).ready(function(){
-      $(".card").hover(function(){
-          $(this).css("background-color", "green");
-          }, function(){
-            $(this).css("background-color", "white");
-          });
-      });
-      </script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -94,52 +84,60 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h1>Gilbert Insurance Agency</h1>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> Phone: <em>(513) 555-5555</em></p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: <em>gilbertinfo@gilbertinsurance.com</em></p>
+                <p><i class="fa fa-fax" aria-hidden="true"></i> Fax: <em>+1-513-9876543</em></p>
               </div>
               <div class="panel-body">
-                <!--Action Card-->
+                <!--Agents Action Card-->
                 <div class="col-md-3">
-                  <div class="card">
-                    <i class="fa fa-address-card-o fa-5x" aria-hidden="true"></i>
-                    <div class="card-body">
-                      <h5 class="card-title">Agents</h5>
-                      <p class="card-text">Manage the agents for this agency.</p>
-                      <a href="#" class="btn btn-primary">Let's Go</a>
+                  <a class="dash-card" href="#">
+                    <div class="card">
+                      <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Agents</h5>
+                        <p class="card-text">Manage the agents for this agency.</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
-                <!--Action Card-->
+                <!--Licensure Action Card-->
                 <div class="col-md-3">
-                  <div class="card">
-                    <i class="fa fa-address-card-o fa-5x" aria-hidden="true"></i>
-                    <div class="card-body">
-                      <h5 class="card-title">Action to Take</h5>
-                      <p class="card-text">Add agents into an agency to manage them more effectively</p>
-                      <a href="#" class="btn btn-primary">Add Agents</a>
+                  <a class="dash-card" href="#">
+                    <div class="card">
+                      <i class="fa fa-id-card-o fa-5x" aria-hidden="true"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Licensure</h5>
+                        <p class="card-text">Manage this agency's licensure.</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
-                <!--Action Card-->
+                <!--Locations Action Card-->
                 <div class="col-md-3">
-                  <div class="card">
-                    <i class="fa fa-address-card-o fa-5x" aria-hidden="true"></i>
-                    <div class="card-body">
-                      <h5 class="card-title">Action to Take</h5>
-                      <p class="card-text">Add agents into an agency to manage them more effectively</p>
-                      <a href="#" class="btn btn-primary">Add Agents</a>
+                  <a class="dash-card" href="#">
+                    <div class="card">
+                      <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Locations</h5>
+                        <p class="card-text">Manage the states this agency can quote in.</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
-                <!--Action Card-->
+                <!--Policies Action Card-->
                 <div class="col-md-3">
-                  <div class="card">
-                    <i class="fa fa-address-card-o fa-5x" aria-hidden="true"></i>
-                    <div class="card-body">
-                      <h5 class="card-title">Action to Take</h5>
-                      <p class="card-text">Add agents into an agency to manage them more effectively</p>
-                      <a href="#" class="btn btn-primary">Add Agents</a>
+                  <a class="dash-card" href="#">
+                    <div class="card">
+                      <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Polices</h5>
+                        <p class="card-text">Manage the policy types this agency can use.</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
+              <!--End of action cards-->
               </div>
             </div>
           </div>
