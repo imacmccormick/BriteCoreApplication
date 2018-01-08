@@ -9,11 +9,8 @@
     <link href="css/styles.css" rel="stylesheet">
     <!--Font Awesome Embed-->
     <script src="https://use.fontawesome.com/4f4c292748.js"></script>
-
-    <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
+    <!--charts.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -80,14 +77,17 @@
         <!--Body Content-->
         <div class="col-md-10">
           <!--Agency 1-->
-          <div  class="row">
+          <div class="row">
+            <!--Agency 1 Panel-->
             <div class="panel panel-default">
+              <!--Panel Header-->
               <div class="panel-heading">
                 <h1>Gilbert Insurance Agency</h1>
                 <p><i class="fa fa-phone" aria-hidden="true"></i> Phone: <em>(513) 555-5555</em></p>
                 <p><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: <em>gilbertinfo@gilbertinsurance.com</em></p>
                 <p><i class="fa fa-fax" aria-hidden="true"></i> Fax: <em>+1-513-9876543</em></p>
               </div>
+              <!--Panel Body-->
               <div class="panel-body">
                 <!--Agents Action Card-->
                 <div class="col-md-3">
@@ -137,7 +137,8 @@
                     </div>
                   </a>
                 </div>
-              <!--End of action cards-->
+                <!--salesChart-->
+                <canvas id="salesChart"></canvas>
               </div>
             </div>
           </div>
@@ -150,12 +151,68 @@
            Copyright ABC Insurance 2018
         </div>
      </div>
-    </footer>
+  </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    <!--Chart.js - salesChart -->
+    <script>
+      var randomScalingFactor = function() {
+            return Math.round(Math.random() * 70);
+        };
+      var ctx = document.getElementById('salesChart').getContext('2d');
+        var chart = new Chart(ctx, {
+          // The type of chart we want to create
+          type: 'line',
+
+          // The data for our dataset
+          data: {
+            labels: ["Jul 17", "Aug 17", "Sep 17", "Oct 17", "Nov 17", "Dec 17", "Jan 18"],
+            datasets: [{
+              label: "Homeowners Insurance",
+              backgroundColor: 'rgba(0,0,0,0.0)',
+              borderColor: 'rgb(255, 99, 132)',
+              data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+              ],
+            }, {
+              label: "Life Insurance",
+              backgroundColor: 'rgba(0,0,0,0.0)',
+              borderColor: 'blue',
+              data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+              ],
+            }]
+          },
+
+          // Configuration options go here
+          options: {
+            title: {
+              display:true,
+              fontSize: 30,
+              position: 'top',
+              fontColor: '#333',
+              fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+              text:'Policies Sold'
+            }
+          }
+        });
+    </script>
   </body>
 </html>

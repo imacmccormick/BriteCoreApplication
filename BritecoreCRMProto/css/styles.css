@@ -49,6 +49,11 @@ body {
   color: white;
   background-color:green;
 }
+/*Chart*/
+#salesChart {
+  margin-top:200px;
+  color:red;
+}
 
 /* Footer */
 

@@ -27,14 +27,14 @@ $(function() {
 
     $.plot('#piechart1', data, {
         series: {
-            pie: { 
+            pie: {
                 show: true,
                 radius: 1,
                 label: {
                     show: true,
                     radius: 3/4,
                     formatter: labelFormatter,
-                    background: { 
+                    background: {
                         opacity: 0.5,
                         color: '#000'
                     }
@@ -150,22 +150,22 @@ Morris.Donut({
 
 // Morris Line Chart
 var tax_data = [
-    {"period": "2013-04", "visits": 2407, "signups": 660},
-    {"period": "2013-03", "visits": 3351, "signups": 729},
-    {"period": "2013-02", "visits": 2469, "signups": 1318},
-    {"period": "2013-01", "visits": 2246, "signups": 461},
-    {"period": "2012-12", "visits": 3171, "signups": 1676},
-    {"period": "2012-11", "visits": 2155, "signups": 681},
-    {"period": "2012-10", "visits": 1226, "signups": 620},
-    {"period": "2012-09", "visits": 2245, "signups": 500}
+    {"period": "2018-01", "homeowners": 2407, "life": 660},
+    {"period": "2017-12", "homeowners": 3351, "life": 729},
+    {"period": "2017-11", "homeowners": 2469, "life": 1318},
+    {"period": "2017-10", "homeowners": 2246, "life": 461},
+    {"period": "2017-09", "homeowners": 3171, "life": 1676},
+    {"period": "2017-08", "homeowners": 2155, "life": 681},
+    {"period": "2017-07", "homeowners": 1226, "life": 620},
+    {"period": "2017-06", "homeowners": 2245, "life": 500}
 ];
 Morris.Line({
     element: 'hero-graph',
     data: tax_data,
     xkey: 'period',
     xLabels: "month",
-    ykeys: ['visits', 'signups'],
-    labels: ['Visits', 'User signups']
+    ykeys: ['homeowners', 'life'],
+    labels: ['Homeowners Ins', 'Life Ins']
 });
 
 
