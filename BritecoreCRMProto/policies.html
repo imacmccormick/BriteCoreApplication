@@ -70,190 +70,117 @@
               </div>
               <!--Panel Body-->
               <div class="panel-body">
-                <!--Agents Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
+                <!--Homeowners Insurance Card-->
+                <div class="col-md-5">
+                  <a class="dash-card" href="#" data-toggle="modal" data-target="#homeownersModal">
                     <div class="card">
-                      <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+                      <i class="fa fa-home fa-5x" aria-hidden="true"></i>
                       <div class="card-body">
-                        <h5 class="card-title">Agents</h5>
-                        <p class="card-text">Manage the agents for this agency.</p>
+                        <h5 class="card-title">Homeowners</h5>
+                        <p class="card-text">Manage where and how this agency can issue Homeowners Insurance.</p>
                       </div>
                     </div>
                   </a>
                 </div>
-                <!--Licensure Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
+                <!-- Homeowners Modal -->
+                <div class="modal fade" id="homeownersModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Gilbert Insurance Agency <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Homeowners Policy</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4>States Active</h4>
+                        <p>Ohio <i class="fa fa-times" aria-hidden="true"></i></p>
+                        <p>Indiana <i class="fa fa-times" aria-hidden="true"></i></p>
+                        <p>Kentucky <i class="fa fa-times" aria-hidden="true"></i></p>
+                        <h5><i class="fa fa-plus" aria-hidden="true"></i> Add New State</h5>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Life Insurance Card-->
+                <div class="col-md-5">
+                  <a class="dash-card" href="#" data-toggle="modal" data-target="#lifeModal">
                     <div class="card">
                       <i class="fa fa-id-card-o fa-5x" aria-hidden="true"></i>
                       <div class="card-body">
-                        <h5 class="card-title">Licensure</h5>
-                        <p class="card-text">Manage this agency's licensure.</p>
+                        <h5 class="card-title">Life</h5>
+                        <p class="card-text">Manage where and how this agency can issue Life Insurance.</p>
                       </div>
                     </div>
                   </a>
                 </div>
-                <!--Locations Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
+                <!-- Life Modal -->
+                <div class="modal fade" id="lifeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Gilbert Insurance Agency <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Life Policy</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4>States Active</h4>
+                        <p>Ohio <i class="fa fa-times" aria-hidden="true"></i></p>
+                        <p>Indiana <i class="fa fa-times" aria-hidden="true"></i></p>
+                        <h5><i class="fa fa-plus" aria-hidden="true"></i> Add New State</h5>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Add new policy Card-->
+                <div class="col-md-2">
+                  <a class="dash-card" href="#" data-toggle="modal" data-target="#addNewModal">
                     <div class="card">
-                      <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
+                      <i class="fa fa-plus fa-5x" aria-hidden="true"></i>
                       <div class="card-body">
-                        <h5 class="card-title">Locations</h5>
-                        <p class="card-text">Manage the states this agency can quote in.</p>
+                        <h5 class="card-title">Add New</h5>
+                        <p class="card-text">Add a new policy.</p>
                       </div>
                     </div>
                   </a>
                 </div>
-                <!--Policies Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
-                    <div class="card">
-                      <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
-                      <div class="card-body">
-                        <h5 class="card-title">Polices</h5>
-                        <p class="card-text">Manage the policy types this agency can use.</p>
+                <!-- Add New Modal -->
+                <div class="modal fade" id="addNewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Gilbert Insurance Agency <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Add New</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4>Select a Policy</h4>
+                        <div class="form-group">
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Auto</option>
+                            <option>Renters</option>
+                            <option>Boat</option>
+                            <option>Motorcycle</option>
+                            <option>Disability</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 </div>
                 <!--salesChart-->
                 <canvas id="salesChart"></canvas>
-              </div>
-            </div>
-          </div>
-          <!--Agency 2-->
-          <div class="row">
-            <!--Agency 1 Panel-->
-            <div class="panel panel-default">
-              <!--Panel Header-->
-              <div class="panel-heading">
-                <h1>Dantrak Insurance</h1>
-                <p><i class="fa fa-phone" aria-hidden="true"></i> Phone: <em>(513) 555-5555</em></p>
-                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: <em>dantrakinfo@dantrak.com</em></p>
-                <p><i class="fa fa-fax" aria-hidden="true"></i> Fax: <em>+1-513-9876543</em></p>
-                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Address: <em>1234 Moonlight Ave. Cincinnati, OH 45012</em></p>
-              </div>
-              <!--Panel Body-->
-              <div class="panel-body">
-                <!--Agents Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
-                    <div class="card">
-                      <i class="fa fa-users fa-5x" aria-hidden="true"></i>
-                      <div class="card-body">
-                        <h5 class="card-title">Agents</h5>
-                        <p class="card-text">Manage the agents for this agency.</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!--Licensure Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
-                    <div class="card">
-                      <i class="fa fa-id-card-o fa-5x" aria-hidden="true"></i>
-                      <div class="card-body">
-                        <h5 class="card-title">Licensure</h5>
-                        <p class="card-text">Manage this agency's licensure.</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!--Locations Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
-                    <div class="card">
-                      <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
-                      <div class="card-body">
-                        <h5 class="card-title">Locations</h5>
-                        <p class="card-text">Manage the states this agency can quote in.</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!--Policies Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
-                    <div class="card">
-                      <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
-                      <div class="card-body">
-                        <h5 class="card-title">Polices</h5>
-                        <p class="card-text">Manage the policy types this agency can use.</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!--salesChart-->
-                <canvas id="salesChart2"></canvas>
-              </div>
-            </div>
-          </div>
-          <!--Agency 3-->
-          <div class="row">
-            <!--Agency 1 Panel-->
-            <div class="panel panel-default">
-              <!--Panel Header-->
-              <div class="panel-heading">
-                <h1>Main Street Insurance Agency</h1>
-                <p><i class="fa fa-phone" aria-hidden="true"></i> Phone: <em>(513) 555-5555</em></p>
-                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: <em>main@mainstinsurance.com</em></p>
-                <p><i class="fa fa-fax" aria-hidden="true"></i> Fax: <em>+1-513-9876543</em></p>
-                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Address: <em>1234 Main Street Cincinnati, OH 45012</em></p>
-              </div>
-              <!--Panel Body-->
-              <div class="panel-body">
-                <!--Agents Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
-                    <div class="card">
-                      <i class="fa fa-users fa-5x" aria-hidden="true"></i>
-                      <div class="card-body">
-                        <h5 class="card-title">Agents</h5>
-                        <p class="card-text">Manage the agents for this agency.</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!--Licensure Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
-                    <div class="card">
-                      <i class="fa fa-id-card-o fa-5x" aria-hidden="true"></i>
-                      <div class="card-body">
-                        <h5 class="card-title">Licensure</h5>
-                        <p class="card-text">Manage this agency's licensure.</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!--Locations Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
-                    <div class="card">
-                      <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
-                      <div class="card-body">
-                        <h5 class="card-title">Locations</h5>
-                        <p class="card-text">Manage the states this agency can quote in.</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!--Policies Action Card-->
-                <div class="col-md-3">
-                  <a class="dash-card" href="#">
-                    <div class="card">
-                      <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
-                      <div class="card-body">
-                        <h5 class="card-title">Polices</h5>
-                        <p class="card-text">Manage the policy types this agency can use.</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!--salesChart-->
-                <canvas id="salesChart3"></canvas>
               </div>
             </div>
           </div>
