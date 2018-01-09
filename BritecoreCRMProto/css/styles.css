@@ -61,10 +61,24 @@ body {
   color: white;
   background-color:#00a796;
 }
+.card img:hover{
+  filter: invert(100%);
+}
 /*Chart*/
 #salesChart {
   margin-top:200px;
   color:red;
+}
+
+/*State Icons*/
+.stateIconOhio {
+  width:39px;
+}
+.stateIconKentucky {
+  width:96px;
+}
+.stateIconIndiana {
+  width:28px;
 }
 
 /* Footer */
