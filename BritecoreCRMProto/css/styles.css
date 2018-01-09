@@ -14,7 +14,10 @@ body {
 }
 
 /*Custom CSS*/
-
+/*General*/
+h1{
+  margin-top:10px;
+}
 /*header*/
 .header .nav li a{
   padding:0px;
@@ -61,7 +64,13 @@ body {
   color: white;
   background-color:#00a796;
 }
-.card img:hover{
+.card:hover > .stateIconOhio{
+  filter: invert(100%);
+}
+.card:hover > .stateIconIndiana{
+  filter: invert(100%);
+}
+.card:hover > .stateIconKentucky{
   filter: invert(100%);
 }
 /*Chart*/
@@ -79,6 +88,10 @@ body {
 }
 .stateIconIndiana {
   width:28px;
+}
+/*Tables*/
+.tableSection{
+  margin-top:180px;
 }
 
 /* Footer */

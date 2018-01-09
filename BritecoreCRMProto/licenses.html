@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BriteCore CRM Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!--Font Awesome Embed-->
+    <script src="https://use.fontawesome.com/4f4c292748.js"></script>
+    <!--charts.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <!--Header-->
+  <div class="header">
+     <div class="container">
+        <div class="row">
+           <!--Logo-->
+           <div class="col-md-5">
+              <!-- Logo -->
+              <div class="logo">
+                 <h1><a href="index.html">ABC Insurance</a></h1>
+              </div>
+           </div>
+           <!--Search Bar-->
+           <div class="col-md-7">
+              <div class="input-group form">
+                   <input type="text" class="form-control" placeholder="Search...">
+                   <span class="input-group-btn">
+                     <button class="btn btn-primary" type="button">Search</button>
+                   </span>
+              </div>
+           </div>
+        </div>
+     </div>
+	</div>
+  <div class="page-content">
+    	<div class="row">
+        <!--Sidenav-->
+    	  <div class="col-md-2">
+    	  	<div class="sidebar content-box" style="display: block;">
+                  <ul class="nav">
+                      <!-- Left Nav Menu -->
+                      <li><a href="index.html"><i class="fa fa-building-o" aria-hidden="true"></i> Agencies</a></li>
+                      <li><a href="agents.html"><i class="fa fa-users" aria-hidden="true"></i> Agents</a></li>
+                      <li class="current"><a href="editors.html"><i class="fa fa-id-card-o" aria-hidden="true"></i> Licenses</a></li>
+                      <li><a href="locations.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Locations</a></li>
+                      <li><a href="policies.html"><i class="fa fa-file-text-o" aria-hidden="true"></i> Policies</a></li>
+                      <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+                  </ul>
+               </div>
+    	  </div>
+        <!--Body Content-->
+        <div class="col-md-10">
+          <!--Agency 1-->
+          <div class="row">
+            <!--Agency 1 Panel-->
+            <div class="panel panel-default">
+              <!--Panel Header-->
+              <div class="panel-heading">
+                <h1>Gilbert Insurance Agency <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Licenses</h1>
+              </div>
+              <!--Panel Body-->
+              <div class="panel-body">
+                <!--Upload New License Card-->
+                <div class="col-md-12">
+                  <a class="dash-card" href="#" data-toggle="modal" data-target="#addNewModal">
+                    <div class="card">
+                      <i class="fa fa-plus fa-5x" aria-hidden="true"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Upload New</h5>
+                        <p class="card-text">Upload a new or updated license for this agency.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Upload New Modal -->
+                <div class="modal fade" id="addNewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Upload New License</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <!--Form Start - State Issued-->
+                        <h4>State Issued</h4>
+                        <div class="form-group">
+                          <select class="form-control" id="stateIssued">
+                            <option>--Select One--</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DC">District of Columbia</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="IA">Iowa</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MD">Maryland</option>
+                            <option value="ME">Maine</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MT">Montana</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NY">New York</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VA">Virginia</option>
+                            <option value="VT">Vermont</option>
+                            <option value="WA">Washington</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WY">Wyoming</option>
+                          </select>
+                        </div>
+                        <!--Line of Authority-->
+                        <h4>Line of Authority</h4>
+                        <div class="form-group">
+                          <select class="form-control" id="lineOfAuthority">
+                            <option>--Select One--</option>
+                            <option>Life</option>
+                            <option>Accident & Health</option>
+                            <option>Property</option>
+                            <option>Casualty</option>
+                            <option>Credit</option>
+                            <option>Travel</option>
+                            <option>Auto Rental</option>
+                          </select>
+                        </div>
+                        <!--Class-->
+                        <h4>Class</h4>
+                        <div class="form-group">
+                          <select class="form-control" id="class">
+                            <option>--Select One--</option>
+                            <option>Major</option>
+                            <option>Limited</option>
+                          </select>
+                        </div>
+                        <!--Attribution-->
+                        <h4>Attribution</h4>
+                        <div class="form-group">
+                          <select class="form-control" id="attribution">
+                            <option>--Select One--</option>
+                            <option>Individual</option>
+                            <option>Business</option>
+                          </select>
+                        </div>
+                        <!--Expiration Date-->
+                        <h4>Expiration Date</h4>
+                        <div class="form-group">
+                          <input type="date" class="form-control">
+                        </div>
+                        <!--Upload License-->
+                        <h4>Upload copy of license</h4>
+                        <div class="form-group">
+                          <input type="file" class="btn btn-default" id="uploadLicense">
+                          <p class="help-block">
+                            PDF or PNG format
+                          </p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--License Table-->
+                <div class="tableSection">
+                  <h2>Licenses Held by This Agency</h2>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>State Issued</th>
+                        <th>Line of Authority</th>
+                        <th>Class</th>
+                        <th>Attribution</th>
+                        <th>Expiration Date</th>
+                        <th>File</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <!--State Issued-->
+                        <td>Ohio</td>
+                        <!--Line of Authority-->
+                        <td>Life</td>
+                        <!--Class-->
+                        <td>Major</td>
+                        <!--Attribution-->
+                        <td>Business</td>
+                        <!--Expiration Date-->
+                        <td>12/20/2019</td>
+                        <!--File-->
+                        <td><i class="fa fa-file-o" aria-hidden="true"></i></td>
+                      </tr>
+                      <tr>
+                        <!--State Issued-->
+                        <td>Ohio</td>
+                        <!--Line of Authority-->
+                        <td>Property</td>
+                        <!--Class-->
+                        <td>Major</td>
+                        <!--Attribution-->
+                        <td>Business</td>
+                        <!--Expiration Date-->
+                        <td>12/20/2019</td>
+                        <!--File-->
+                        <td><i class="fa fa-file-o" aria-hidden="true"></i></td>
+                      </tr>
+                      <tr class="danger">
+                        <!--State Issued-->
+                        <td>Ohio</td>
+                        <!--Line of Authority-->
+                        <td>Casualty</td>
+                        <!--Class-->
+                        <td>Major</td>
+                        <!--Attribution-->
+                        <td>Business</td>
+                        <!--Expiration Date-->
+                        <td><strong>12/20/2017<strong></td>
+                        <!--File-->
+                        <td><i class="fa fa-file-o" aria-hidden="true"></i></td>
+                      </tr>
+                      <tr>
+                        <!--State Issued-->
+                        <td>Ohio</td>
+                        <!--Line of Authority-->
+                        <td>Credit</td>
+                        <!--Class-->
+                        <td>Major</td>
+                        <!--Attribution-->
+                        <td>Business</td>
+                        <!--Expiration Date-->
+                        <td>12/20/2019</td>
+                        <!--File-->
+                        <td><i class="fa fa-file-o" aria-hidden="true"></i></td>
+                      </tr>
+                      <tr class="warning">
+                        <!--State Issued-->
+                        <td>Indiana</td>
+                        <!--Line of Authority-->
+                        <td>Life</td>
+                        <!--Class-->
+                        <td>Major</td>
+                        <!--Attribution-->
+                        <td>Business</td>
+                        <!--Expiration Date-->
+                        <td><strong>01/29/2018</strong></td>
+                        <!--File-->
+                        <td><i class="fa fa-file-o" aria-hidden="true"></i></td>
+                      </tr>
+                      <tr>
+                        <!--State Issued-->
+                        <td>Indiana</td>
+                        <!--Line of Authority-->
+                        <td>Accident & Health</td>
+                        <!--Class-->
+                        <td>Major</td>
+                        <!--Attribution-->
+                        <td>Business</td>
+                        <!--Expiration Date-->
+                        <td>05/20/2018</td>
+                        <!--File-->
+                        <td><i class="fa fa-file-o" aria-hidden="true"></i></td>
+                      </tr>
+                      <tr>
+                        <!--State Issued-->
+                        <td>Kentucky</td>
+                        <!--Line of Authority-->
+                        <td>Life</td>
+                        <!--Class-->
+                        <td>Major</td>
+                        <!--Attribution-->
+                        <td>Business</td>
+                        <!--Expiration Date-->
+                        <td>07/13/2018</td>
+                        <!--File-->
+                        <td><i class="fa fa-file-o" aria-hidden="true"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <footer>
+     <div class="container">
+        <div class="copy text-center">
+           Copyright ABC Insurance 2018
+        </div>
+     </div>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
