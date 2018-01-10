@@ -11,6 +11,16 @@
     <script src="https://use.fontawesome.com/4f4c292748.js"></script>
     <!--charts.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Add items to table script -->
+    <script>
+      $(document).ready(function(){
+        $("#addAgent").click(function(){
+            $("#agentTableBody").append("<tr><td>John Doe</td><td>john@gilbertinsurance.com</td><td>(513) 555-5555</td><td>Life-Ohio</td><td>Ohio</td></tr>");
+        });
+      });
+    </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -183,7 +193,7 @@
                         </div>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                        <button type="button" class="btn btn-primary" id="addAgent" data-dismiss="modal">Done</button>
                       </div>
                     </div>
                   </div>
@@ -201,7 +211,7 @@
                         <th>Active States</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="agentTableBody">
                       <tr>
                         <!--Name-->
                         <td>Mac McCormick</td>
